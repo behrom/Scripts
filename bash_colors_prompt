@@ -1,0 +1,10 @@
+# /etc/bashrc
+
+# colors in bash
+if [ "$EUID" -ne 0 ]; then
+    export PS1="\e[38;5;28m\e[1m\u@\h\e[21m \e[38;5;75m\w:\e[0m$ "
+else
+    export PS1="\e[38;5;1m\e[1m\u@\h\e[21m \e[38;5;75m\w:\e[0m$ "
+fi
+
+# If you want to change colors: http://misc.flogisoft.com/bash/tip_colors_and_formatting
